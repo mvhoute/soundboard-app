@@ -9,6 +9,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -27,21 +28,39 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="header">
+        <header class="header">
             <div class="headerInner">
                 <h1>Infostrada Sports soundboard</h1>
             </div>
-        </div>
+        </header>
 
         <div class="container">
-            <a class="button" href="#"><audio><source src="/sounds/unacceptable.aif" type="audio/aif"></audio><span>Unacceptable</span></a>
-            <a class="button" href=""><span>Button</span></a>
-            <a class="button" href=""><span>Button</span></a>
-            <a class="button" href=""><span>Button</span></a>
-            <a class="button" href=""><span>Button</span></a>
-            <a class="button" href=""><span>Button</span></a>
-            <a class="button" href=""><span>Button</span></a>
+            <span class="button" onclick="playSound(this, 'sounds/drumroll.mp3');">Ba Dum Tss</span>
+            <span class="button" onclick="playSound(this, 'sounds/geintje.mp3');">Geintje natuurlijk</span>
+            <span class="button" onclick="playSound(this, 'sounds/gay.mp3');">Ha gay</span>
+            <span class="button" onclick="playSound(this, 'sounds/whatshesaid.mp3');">What she said</span>
+
+            <span class="button" onclick="playSound(this, 'sounds/huh.mp3');">Huh</span>
+            <span class="button" onclick="playSound(this, 'sounds/koekoek.mp3');">Koekoek</span>
+            <span class="button" onclick="playSound(this, 'sounds/handtekening.mp3');">Handtekening</span>
+            <span class="button" onclick="playSound(this, 'sounds/kukeleku.mp3');">Kukeleku</span>
+
+            <span class="button" onclick="playSound(this, 'sounds/yolo.mp3');">Yolo</span>
+            <span class="button" onclick="playSound(this, 'sounds/raar.mp3');">Raar</span>
+            <span class="button" onclick="playSound(this, 'sounds/istieweer.mp3');">Is 'ie weer</span>
+            <span class="button" onclick="playSound(this, 'sounds/mars.mp3');">Mars</span>
+
+            <span class="button" onclick="playSound(this, 'sounds/jammer.mp3');">Jammer joh</span>
+
         </div>
+
+
+        <footer>
+            <div class="footerInner">
+                <span class="footNote">Versie 0.1 Alpha | <a href="https://github.com/mvhoute/soundboard-app">Github</a></span>
+            </div>
+
+        </footer>
 
 
         <!-- build:js scripts/vendor.js -->
